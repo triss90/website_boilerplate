@@ -1,11 +1,12 @@
-//Tools - Often thrid party stuff or global variables
-@import '1-tools/normalize';
-@import '1-tools/gridder';
-@import '1-tools/colors';
-@import '1-tools/mixins';
+//Vendor - Reserved for vendor CSS, usually included with third party libraries.
+@import '1-vendor/normalize';
+@import '1-vendor/gridder-1.4.1';
+@import '1-vendor/typebase-0.1.0';
 
-//Base - CSS used throughout the project or app, e.g. a navigation
-@import '2-base/navigation';
+//Base - CSS that does not cause any direct styling to the page - variables and mixins
+@import '2-modules/colors';
+@import '2-modules/mixins';
 
-//Pages - Styles specific to the different pages
-@import '3-pages/frontpage';
+//Pages - Styles specific to different elements
+@import '3-partials/navigation';
+@import '3-partials/frontpage';
